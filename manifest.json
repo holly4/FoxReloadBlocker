@@ -1,0 +1,18 @@
+{
+	"manifest_version" : 2,
+	"author" : "Holly",
+	"name" : "FoxReloadBlocker",
+	"description" : "Block forced page reloads on Fox News",
+	"version" : "0.1",
+
+  	"icons": {
+    	"48": "icon48.png"
+  	},
+
+	"content_scripts" : [
+		{
+			"matches" : ["*://*.foxnews.com/*"],
+			"js" : ["content_script.js"]
+		}
+	]
+}
