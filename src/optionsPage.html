@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fox Reload Blocker</title>
+    <link rel="stylesheet" type="text/css" href="optionsPage.css">
+</head>
+
+<body>
+    <div>
+        <label>Fox News refresh interval: </label>
+        <input type="text" id="refresh-interval" class="number">
+        <label> seconds</label>
+    </div>
+    <div>
+        <label>Warn me:</label>
+        <input type="text" id="warning-delay" class="number">
+        <label>seconds before refresh.</label>
+    </div>
+    <div>
+        <fieldset>
+            <legend>
+                <input type="checkbox" id="flash-screen">
+                <label>Flash the screen</label>
+            </legend>
+            <div class="indent">
+                <label>Using this color </label>
+                <input type="text" id="flash-screen-color" class="color"><br>
+                <input type="text" id="flash-screen-times" class="number">
+                <label> times and every</label>
+                <input type="text" id="flash-screen-interval" class="number">
+                <label> seconds.</label>
+            </div>                
+        </fieldset>
+        <div>
+        </div>
+        <div id=buttons>
+            <button id="test-button">Test Settings</button>
+            <button id="save-button">Save Settings</button>
+            <span id="status"></span>
+        </div>
+    </div>
+    <div>
+        <input type="checkbox" id="verbose-logging">
+        <label>Verbose logging</label>
+    </div>
+    <script src="jquery-1.12.3.slim.min.js"></script>
+    <script src="optionsPage.js"></script>
+    <script src="notifiers.js"></script>
+    <script src="settings.js"></script>
+</body>
+
+</html>

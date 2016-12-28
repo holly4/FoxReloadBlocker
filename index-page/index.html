@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>Fox Reload Blocker Version 1.1</title>
+
+<xmp theme="united" style="display:none;">
+
+## Changes since version 1.0
+- Display a warning of a pending refresh
+- Only run on Fox News pages with a comment section
+- Show an icon to indicate when active
+
+## How it works
+The Fox Reload Blocker works by telling the browser to show a dialog asking if you want
+the current page reloaded. Unfortunately, it is not possible to prevent the code running
+on the page from requesting a refresh but the refresh can be cancelled with this dialog. 
+
+The dialog is built into the browser so may appear different depending on browser and version.
+This is the notice from the present version of Google Chrome. Selecting "Don't Reload" on
+this dialog cancels the refresh.
+
+![Reload Warning Dialog](images/reload-warning.png "Reload Warning Dialog")
+
+Note that this dialog will come up when you navigate away from the page. In this case indicate
+you want the page reloaded. (The prompt should be asking if you if you want the current page 
+**unloaded** so a new page can be loaded but the text is baked into the browser).
+
+### Pending Refresh Notification
+One downfall of the dialog is that when it comes up any keystrokes you may be making will be
+immediately directed to the dialog. So if you are typing a comment and press the space bar 
+then that will taken to mean do the default, or reload the page.
+
+Since the refresh on the Fox Forum occurs on an exact 10 minute cycle a warning cab be given
+by flashing the page background so you know to stop typing. There are options to control this
+in the settings page for the extension. A quick way to get to the page in Chrome listing 
+your installed extensions is via the URL `chrome://extensions/`. You can also get to your
+installed exensions from the Settings menu.
+
+Once you are in the list of extensions choose the Options link for the extension and you 
+will see this dialog:
+
+![Extension Options](images/options.png "Extension Options")
+
+From here you can:
+
+1) Adjust the refresh interval (in case Fox News changes it)
+
+2) Select how long before the refresh the warning starts
+
+3) Turn off the notification with the checkbox
+
+4) Select how many times and how often the screen is flashed.
+
+5) Control logging
+
+The "Test Settings" button allows you to see how your settings will appear.
+
+The "Save Settings" button saves them when you are satisfied.
+
+
+### Only run on Fox News pages with a comment section
+The intial version of the extension ran on all Fox News pages except the main page. 
+Version 1.1 only runs on Fox News pages with comment sections as that's likely the
+only place where the refesh is a nuisace.
+
+### Show an icon to indicate when active
+Version 1.1 adds a browser notification icon so you can tell when the extension is
+active. The icon is active on pages with comment sections. Clicking the icon does
+nothing but a context menu is displayed with menu item to get to the settings page.
+
+![Extension Icon](images/icon48.png "Extension Icon")
+
+</xmp>
+
+<script src="http://strapdownjs.com/v/0.2/strapdown.js"></script>
+</html>

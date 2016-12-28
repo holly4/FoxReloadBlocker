@@ -1,0 +1,35 @@
+body {
+    padding: 10px;
+    margin: 0px;
+    font-size: 90%;
+}
+
+#buttons {
+    padding: 10px;
+}
+
+#save-button, #test-button {
+    margin-right: 30px;
+    padding-right: 30px;
+}
+
+.number {
+    width: 40px;
+}
+
+.color {
+    width: 120px;
+}
+
+fieldset, .section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.indent {
+    padding-left: 25px;
+}
+
+
+
+
